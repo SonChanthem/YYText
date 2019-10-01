@@ -29,7 +29,8 @@ NSCharacterSet *YYTextVerticalFormRotateCharacterSet() {
         [set removeCharactersInRange:NSMakeRange(0x3008, 10)];
         [set removeCharactersInRange:NSMakeRange(0x3014, 12)];
         [set addCharactersInRange:NSMakeRange(0x3040, 96)]; // Hiragana
-        [set addCharactersInRange:NSMakeRange(0x30A0, 96)]; // Katakana
+        [set addCharactersInRange:NSMakeRange(0x30A0, 92)]; // Katakana
+        [set addCharactersInRange:NSMakeRange(0x30FD, 3)]; // Katakana
         [set addCharactersInRange:NSMakeRange(0x3100, 48)]; // Bopomofo
         [set addCharactersInRange:NSMakeRange(0x3130, 96)]; // Hangul Compatibility Jamo
         [set addCharactersInRange:NSMakeRange(0x3190, 16)]; // Kanbun
@@ -39,13 +40,20 @@ NSCharacterSet *YYTextVerticalFormRotateCharacterSet() {
         [set addCharactersInRange:NSMakeRange(0x3200, 256)]; // Enclosed CJK Letters and Months
         [set addCharactersInRange:NSMakeRange(0x3300, 256)]; // CJK Compatibility
         [set addCharactersInRange:NSMakeRange(0x3400, 2582)]; // CJK Unified Ideographs Extension A
-        [set addCharactersInRange:NSMakeRange(0x4E00, 20941)]; // CJK Unified Ideographs
+        [set addCharactersInRange:NSMakeRange(0x4E01, 20941)]; // CJK Unified Ideographs
         [set addCharactersInRange:NSMakeRange(0xAC00, 11172)]; // Hangul Syllables
         [set addCharactersInRange:NSMakeRange(0xD7B0, 80)]; // Hangul Jamo Extended-B
         [set addCharactersInString:@""]; // U+F8FF (Private Use Area)
         [set addCharactersInRange:NSMakeRange(0xF900, 512)]; // CJK Compatibility Ideographs
         [set addCharactersInRange:NSMakeRange(0xFE10, 16)]; // Vertical Forms
-        [set addCharactersInRange:NSMakeRange(0xFF00, 240)]; // Halfwidth and Fullwidth Forms
+        [set addCharactersInRange:NSMakeRange(0xFF0C, 1)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFF0E, 1)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFF1B, 1)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFF66, 10)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFF71, 105)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFFDB, 2)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFFE2, 3)]; // Halfwidth and Fullwidth Forms katakana
+        [set addCharactersInRange:NSMakeRange(0xFFE8, 5)]; // Halfwidth and Fullwidth Forms katakana
         [set addCharactersInRange:NSMakeRange(0x1F200, 256)]; // Enclosed Ideographic Supplement
         [set addCharactersInRange:NSMakeRange(0x1F300, 768)]; // Enclosed Ideographic Supplement
         [set addCharactersInRange:NSMakeRange(0x1F600, 80)]; // Emoticons (Emoji)
