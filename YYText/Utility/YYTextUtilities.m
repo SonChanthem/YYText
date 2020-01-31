@@ -58,6 +58,11 @@ NSCharacterSet *YYTextVerticalFormRotateCharacterSet() {
         [set addCharactersInRange:NSMakeRange(0x1F300, 768)]; // Enclosed Ideographic Supplement
         [set addCharactersInRange:NSMakeRange(0x1F600, 80)]; // Emoticons (Emoji)
         [set addCharactersInRange:NSMakeRange(0x1F680, 128)]; // Transport and Map Symbols
+      
+        // Add New
+        [set addCharactersInRange:NSMakeRange(0xFF10, 10)]; // Fullwidth Forms Number
+        [set addCharactersInRange:NSMakeRange(0xFF21, 26)]; // Fullwidth Forms Latin capital letter
+        [set addCharactersInRange:NSMakeRange(0xFF41, 26)]; // Fullwidth Forms Latin small letter
         
         // See http://unicode-table.com/ for more information.
     });

@@ -782,6 +782,12 @@ dispatch_semaphore_signal(_lock);
                 for (NSUInteger g = 0; g < glyphCount; g++) {
                     BOOL glyphRotate = 0, glyphRotateMove = NO;
                     CFIndex runStrLen = runStrIdx[g + 1] - runStrIdx[g];
+                  
+                    // Fixed truncated text not display as vertical in some case
+                    if (runStrLen == 1 && r == runCount - 1 && container.truncationType == YYTextTruncationTypeEnd) {
+                      runStrLen = 2;
+                    }
+                  
                     if (isColorGlyph) {
                         glyphRotate = YES;
                     } else if (runStrLen == 1) {

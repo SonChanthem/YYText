@@ -79,6 +79,7 @@
 		D94EE9981F37304200F37AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94EE9971F37304200F37AD6 /* Assets.xcassets */; };
 		D94EE99B1F37304200F37AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94EE9991F37304200F37AD6 /* LaunchScreen.storyboard */; };
 		D94EE99E1F37304200F37AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94EE99D1F37304200F37AD6 /* main.m */; };
+		FAFAE37723E41F480064CF8D /* YYTextLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAE37623E41F480064CF8D /* YYTextLabelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,6 +213,8 @@
 		D94EE99A1F37304200F37AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94EE99C1F37304200F37AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94EE99D1F37304200F37AD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAFAE37523E41F480064CF8D /* YYTextLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextLabelViewController.h; sourceTree = "<group>"; };
+		FAFAE37623E41F480064CF8D /* YYTextLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextLabelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +448,8 @@
 				D91055161F37367B0007F224 /* YYTextRubyExample.m */,
 				D91055011F37367B0007F224 /* YYTextAsyncExample.h */,
 				D91055021F37367B0007F224 /* YYTextAsyncExample.m */,
+				FAFAE37523E41F480064CF8D /* YYTextLabelViewController.h */,
+				FAFAE37623E41F480064CF8D /* YYTextLabelViewController.m */,
 				D91055301F3736910007F224 /* Resources */,
 				D91054DF1F3736130007F224 /* Supporting Files */,
 			);
@@ -533,6 +538,7 @@
 				D91054881F3735D20007F224 /* YYFrameImage.m in Sources */,
 				D910551B1F37367B0007F224 /* YYTextAsyncExample.m in Sources */,
 				D94EE99E1F37304200F37AD6 /* main.m in Sources */,
+				FAFAE37723E41F480064CF8D /* YYTextLabelViewController.m in Sources */,
 				D91055251F37367B0007F224 /* YYTextRubyExample.m in Sources */,
 				D91054FC1F3736700007F224 /* UIImage+YYWebImage.m in Sources */,
 				D91054D11F3735E50007F224 /* UIPasteboard+YYText.m in Sources */,
