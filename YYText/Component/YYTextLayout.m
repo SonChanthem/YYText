@@ -784,7 +784,7 @@ dispatch_semaphore_signal(_lock);
                     CFIndex runStrLen = runStrIdx[g + 1] - runStrIdx[g];
                   
                     // Fixed truncated text not display as vertical in some case
-                    if (runStrLen == 1 && r == runCount - 1 && container.truncationType == YYTextTruncationTypeEnd) {
+                    if (runStrLen == 1 && r == runCount - 1 && container.truncationType == YYTextTruncationTypeEnd && truncatedLine) {
                       runStrLen = 2;
                     }
                   
