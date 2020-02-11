@@ -30,10 +30,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
   
-    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@" 2A-Spot江ー戸三１十六見附ウォク第1回浅草橋門から市ヶ江戸三十六見附ウォーク第1回浅草橋門から市ヶ江戸三十六見附ウォーク第1回浅草橋門から市ヶ江戸三十六見附ウォーク第1回 草橋門から市ヶ江戸三十六見附ウォーク第1回浅草橋門から市ヶ"];
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"2A-Spot江ー戸三１十六見附ウォク第1回浅草橋門から市ヶ江戸三十六見附ウォーク第1回浅草橋門から市ヶ江戸三十六見附ウォーク第1回浅草橋門から市ヶ江戸三十六見附ウォーク第1回 草橋門から市ヶ江戸三十六見附ウォーク第1回浅草橋門から市ヶ"];
     text.yy_font = [UIFont systemFontOfSize:4];
     text.yy_color = UIColor.whiteColor;
-    [text yy_setKern:[NSNumber numberWithInt:-2] range:NSMakeRange(0, 1)];
   
     YYLabel *verticalLabel = [YYLabel new];
     verticalLabel.backgroundColor = UIColor.blueColor;
@@ -43,24 +42,24 @@
     verticalLabel.verticalForm = YES;
   
   
-    text.yy_font = [UIFont systemFontOfSize:30];
+    text.yy_font = [UIFont systemFontOfSize:40];
   
     YYLabel *verticalLabel2 = [YYLabel new];
     verticalLabel2.backgroundColor = UIColor.blueColor;
     verticalLabel2.attributedText = text;
     [self.view addSubview: verticalLabel2];
-    verticalLabel2.frame = CGRectMake(110, 90, 40, self.view.frame.size.height - 100);
+    verticalLabel2.frame = CGRectMake(110, 90, 80, self.view.frame.size.height - 100);
     verticalLabel2.verticalForm = YES;
   
   NSMutableAttributedString *date = [[NSMutableAttributedString alloc] initWithString:@"2020.01.10 (Fri) 15:07"];
   date.yy_font = [UIFont systemFontOfSize:4];
   date.yy_color = UIColor.whiteColor;
-  
+
   YYLabel *dateVerticalLabel = [YYLabel new];
   dateVerticalLabel.backgroundColor = UIColor.blueColor;
   dateVerticalLabel.attributedText = date;
   [self.view addSubview: dateVerticalLabel];
-  dateVerticalLabel.frame = CGRectMake(160, 90, 6, 168);
+  dateVerticalLabel.frame = CGRectMake(200, 90, 6, 168);
   dateVerticalLabel.verticalForm = YES;
   
 }

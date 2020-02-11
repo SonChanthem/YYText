@@ -531,7 +531,10 @@ dispatch_semaphore_signal(_lock);
         
         if (constraintSizeIsExtended) {
             if (isVerticalForm) {
-                if (rect.origin.x + rect.size.width >
+                // Fixed bug calculated wrong layout (cannot display text) with some font size
+                NSInteger originXInt = (NSInteger)rect.origin.x;
+                NSInteger sizeWidthInt = (NSInteger)rect.size.width;
+                if (originXInt + sizeWidthInt >
                     constraintRectBeforeExtended.origin.x +
                     constraintRectBeforeExtended.size.width) break;
             } else {
